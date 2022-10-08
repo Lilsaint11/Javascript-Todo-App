@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+h1,
+.typespace,
+.main {
+  padding: 2rem 1rem;
+  width: 100%;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.typespace {
+  display: flex;
+}
+
+input,
+.typespace button {
+  background-color: #374151;
+  opacity: 0.6;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+input,
+.notes {
+  flex: 1 1 0%;
+}
+
+button {
+  color: yellow;
+}
+
+button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.main button:hover {
+  opacity: 0.6;
+}
+
+.notes {
+  display: flex;
+  margin-bottom: 1rem;
+  background-color: #111827;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.note,
+button {
+  appearance: none;
+  outline: none;
+  border: none;
+  background: none;
+  padding: 10px;
+}
+.delete {
+  color: red;
+}
+.green {
+  color: rgb(40, 240, 40);
+}
+
+.fall {
+  transform: 0.3s translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
